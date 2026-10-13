@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sshstation"
+version = "1.2.0"
+description = "A refined SSH server manager for the terminal. An Idea by Vaibhav Kite."
+authors = [{ name = "Vaibhav Kite" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["textual>=8.2,<9"]
+
+[project.scripts]
+sshstation = "sshstation:main"
+
+[tool.setuptools]
+py-modules = ["sshstation"]
